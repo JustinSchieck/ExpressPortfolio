@@ -1,3 +1,13 @@
+/**
+* @Author: Justin Schieck
+* @Date:   2017-02-06T21:15:00-05:00
+* @Email:  schieck91@gmail.com
+* @Last modified by:   Justin Schieck
+* @Last modified time: 2017-02-06T21:58:45-05:00
+*/
+
+
+
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
@@ -7,7 +17,7 @@ var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
-
+var users = require('./routes/portfolio');
 var app = express();
 
 // view engine setup
@@ -24,7 +34,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/users', users);
-
+app.use('/portfolio', portfolio);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
