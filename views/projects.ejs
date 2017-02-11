@@ -3,19 +3,75 @@
 @Date:   2017-02-03T13:08:31-05:00
 @Email:  schieck91@gmail.com
 @Last modified by:   Justin Schieck
-@Last modified time: 2017-02-06T21:56:39-05:00
+@Last modified time: 2017-02-11T12:03:33-05:00
 -->
 
 
 
 <% include ./partials/header.ejs %>
-  <h1>Projects</h1>
+<section class="content-block gallery-1 gallery-1-2">
+            <div class="container">
+                <div class="underlined-title">
+                    <h1>Projects</h1>
+                    <hr>
+                </div>
 
-  <p>
-    -sandbox
-    -robotic arm
-    -webpage
-  </p>
+                <!-- /.gallery-filter -->
+                <div class="row" >
+                    <div class="isotope-gallery-container">
+                        <div class="col-md-4 col-sm-6 col-xs-12 gallery-item-wrapper artwork creative">
+                            <div class="gallery-item">
+                                <div class="gallery-thumb">
+                                    <img src="/images/robotichand.jpg" class="img-responsive" alt="1st gallery Thumb">
+                                    <div class="image-overlay"></div>
+                                    <a href="http://placehold.it/800x600" class="gallery-zoom"><i  alt="This is the title"></i></a>
+                                    <a href="#" class="gallery-link" target="_blank"></a>
+                                </div>
+                                <div class="gallery-details">
+                                    <h5>Robotic Hand Prosthesis</h5>
+                                    <p>Robotic arm controlled through a seperate glove</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.gallery-item-wrapper -->
+                        <div class="col-md-4 col-sm-6 col-xs-12 gallery-item-wrapper nature outside">
+                            <div class="gallery-item">
+                                <div class="gallery-thumb">
+                                    <img src="/images/wearables.jpg" class="img-responsive" alt="2nd gallery Thumb">
+                                    <div class="image-overlay"></div>
+                                    <a href="http://placehold.it/800x600" class="gallery-zoom"></a>
+                                    <a href="#" class="gallery-link"></a>
+                                </div>
+                                <div class="gallery-details">
+                                    <h5>iCan Interactive</h5>
+                                    <p>Wearable technology for kids with disablilties</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.gallery-item-wrapper -->
+                        <div class="col-md-4 col-sm-6 col-xs-12 gallery-item-wrapper photography artwork">
+                            <div class="gallery-item">
+                                <div class="gallery-thumb">
+                                    <img src="/images/sandbox.jpg" class="img-responsive" alt="3rd gallery Thumb">
+                                    <div class="image-overlay"></div>
+                                    <a href="http://placehold.it/800x600" class="gallery-zoom"></i></a>
+                                    <a href="#" class="gallery-link"></a>
+                                </div>
+                                <div class="gallery-details">
+                                    <h5>AR Sandbox</h5>
+                                    <p>Augmented Reality Sandbox for the study of the change in topigraphical maps</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- /.gallery-item-wrapper -->
+                    </div>
+                    <!-- /.isotope-gallery-container -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </section>
   <% include ./partials/footer.ejs %>
 </body>
 

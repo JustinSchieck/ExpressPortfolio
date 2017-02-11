@@ -3,7 +3,7 @@
 * @Date:   2017-02-06T21:15:00-05:00
 * @Email:  schieck91@gmail.com
 * @Last modified by:   Justin Schieck
-* @Last modified time: 2017-02-06T21:58:45-05:00
+* @Last modified time: 2017-02-11T14:16:34-05:00
 */
 
 
@@ -17,8 +17,16 @@ var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
-var users = require('./routes/portfolio');
+var portfolio = require('./routes/portfolio');
 var app = express();
+
+//use mongoose to connect to mongodb
+var mongoose = require('mongoose');
+var conn = mongoose.connection;
+
+//links to global file for conn string
+var globals = require('./config/globals');
+conn.open(globals.db);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -35,6 +43,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 app.use('/users', users);
 app.use('/portfolio', portfolio);
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');

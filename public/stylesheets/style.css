@@ -1,3 +1,13 @@
+/**
+* @Author: Justin Schieck
+* @Date:   2017-02-06T21:15:00-05:00
+* @Email:  schieck91@gmail.com
+* @Last modified by:   Justin Schieck
+* @Last modified time: 2017-02-11T11:40:20-05:00
+*/
+
+
+
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -5,4 +15,92 @@ body {
 
 a {
   color: #00B7FF;
+}
+
+
+h1,
+h3 {
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 700;
+  padding-bottom: 100px;
+}
+
+
+/* TOP NAVIGATION */
+
+.navbar {
+	width: 100%;
+	margin-bottom: 0;
+	border-radius: 0;
+	z-index: 999;
+}
+
+/* HEADER */
+
+.jumbotron-header {
+	padding: 100px 0 120px;
+	background: url(../images/banner.jpg) center center;
+	background-size: cover;
+  margin-top: 75px;
+}
+
+.page-header {
+	color: #fff;
+}
+
+
+/* Skills Graph Progress Bars */
+
+.progress {
+	margin-bottom: 10px;
+	background: none;
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+}
+
+.progress-bar {
+	padding-left: 10px;
+	text-align: left;
+	background-color: #005f9d;
+}
+
+
+/* PORTFOLIO SECTION */
+.gallery-details {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+
+/* CONTACT SECTION */
+
+.contact-section {
+	padding: 30px;
+	color: #fff;
+}
+
+.contact-facebook {
+	background-color: #3b5998;
+}
+
+.contact-twitter {
+	background-color: #55acee;
+}
+
+.contact-linkedin {
+	background-color: #007bb5;
+}
+
+.contact-github {
+	background-color: #000;
+}
+
+.contact-freecodecamp {
+	background-color: #006B05;
+}
+
+.contact-email {
+	background-color: #666;
 }

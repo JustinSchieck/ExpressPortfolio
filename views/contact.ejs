@@ -3,12 +3,49 @@
 @Date:   2017-02-03T13:08:48-05:00
 @Email:  schieck91@gmail.com
 @Last modified by:   Justin Schieck
-@Last modified time: 2017-02-06T21:47:12-05:00
+@Last modified time: 2017-02-11T14:37:14-05:00
 -->
 
 <% include ./partials/header.ejs %>
   <h1>Contact Information</h1>
-  <P>
+
+  <div class="row">
+              <div class="col-md-6">
+                  <div class="contact" class="form-container">
+                      <fieldset>
+                          <div id="message"></div>
+                          <form method="post" action="js/contact-form.php" name="contactform" id="contactform">
+                              <div class="form-group">
+                                  <input name="name" id="name" type="text" value="" placeholder="Name" class="form-control" />
+                              </div>
+                              <div class="form-group">
+                                  <input name="email" id="email" type="text" value="" placeholder="Email" class="form-control" />
+                              </div>
+                              <div class="form-group">
+                                  <input name="phone" id="phone" type="text" value="" placeholder="Phone" class="form-control" />
+                              </div>
+                              <div class="form-group">
+                                  <textarea name="comments" id="comments" class="form-control" rows="3" placeholder="Message" id="textArea"></textarea>
+                                  <div class="editContent">
+                                      <p class="small text-muted"><span class="guardsman">* All fields are required.</span> Once we receive your message we will respond as soon as possible.</p>
+                                  </div>
+                              </div>
+                              <div class="form-group">
+                                  <button class="btn " type="submit" id="cf-submit" name="submit">Send</button>
+                              </div>
+                          </form>
+                      </fieldset>
+                  </div>
+                  <!-- /.form-container -->
+              </div>
+
+
+
+
+
+
+
+  <!-- <P>
     -phone number
     -email
     -address
@@ -17,7 +54,7 @@
     -github
     -linkedin
     -freecodecamp
-  </P>
+  </P> -->
   <% include ./partials/footer.ejs %>
 </body>
 
