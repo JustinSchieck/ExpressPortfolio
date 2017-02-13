@@ -3,7 +3,7 @@
 * @Date:   2017-02-06T21:15:00-05:00
 * @Email:  schieck91@gmail.com
 * @Last modified by:   Justin Schieck
-* @Last modified time: 2017-02-11T11:40:20-05:00
+* @Last modified time: 2017-02-13T15:32:51-05:00
 */
 
 
@@ -75,6 +75,38 @@ h3 {
 
 
 /* CONTACT SECTION */
+
+.contact-section {
+	padding: 30px;
+	color: #fff;
+}
+
+.contact-facebook {
+	background-color: #3b5998;
+}
+
+.contact-twitter {
+	background-color: #55acee;
+}
+
+.contact-linkedin {
+	background-color: #007bb5;
+}
+
+.contact-github {
+	background-color: #000;
+}
+
+.contact-freecodecamp {
+	background-color: #006B05;
+}
+
+.contact-email {
+	background-color: #666;
+}
+
+/* CONTACT SECTION */
+
 
 .contact-section {
 	padding: 30px;
