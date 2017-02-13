@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "description": "A portfolio site using node.js and exxpress.js",
+  "description": "A portfolio site using node.js and express.js",
   "repository":"https://github.com/JustinSchieck/ExpressPortfolio",
   "keywords": ["node","express","static"]
 
